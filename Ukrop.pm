@@ -1,6 +1,6 @@
 #  Content-Encoding: koi8-u
 #  
-#  $Id: Ukrop.pm,v 1.2 2008/04/10 21:56:39 dk Exp $
+#  $Id: Ukrop.pm,v 1.3 2008/04/11 17:05:15 dk Exp $
 
 use strict;
 
@@ -8,7 +8,7 @@ package Acme::Ukrop;
 
 use vars qw($VERSION);
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 my %n = (
 	'взад'     => 'return',
@@ -34,6 +34,8 @@ use Filter::Simple sub { s/$k/$1$n{$2}/gs } ;
 1;
 
 =pod
+
+=encoding koi8-u
 
 =head1 NAME
 
